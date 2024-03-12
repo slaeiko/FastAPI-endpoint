@@ -12,18 +12,14 @@ with open('db.json', 'r') as f:
 <html>
     <head>
         <title>FastAPI on Vercel</title>
-        <link rel="icon" href="/static/favicon.ico" type="image/x-icon" />
     </head>
     <body>
-        <div class="bg-gray-200 p-4 rounded-lg shadow-lg">
             <h1>Hello from FastAPI@{__version__}</h1>
             <ul>
                 <li><a href="/names">/Nombres</a></li>
                 <li><a href="/names/1">/Nombre, Id: 1</a></li>
                 <li><a href="/names/2">/Nombre, Id: 2</a></li>
                 <li><a href="/names/3">/Nombre, Id: 3</a></li>
-            </ul>
-        </div>
     </body>
 </html>
 """
