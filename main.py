@@ -1,8 +1,10 @@
 from fastapi import FastAPI, __version__
 from fastapi.responses import HTMLResponse
+from fastapi.staticfiles import StaticFiles
 import json
 
 app = FastAPI()
+app.mount("/static", StaticFiles(directory=None), name="static")
 
 with open('db.json', 'r') as f:
     data = json.load(f)
